@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="/">÷</button>
 
-  <header>
-    <div class="container">
-      <h1 class="logo">MyLanding</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="*">×</button>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Welcome to MyLanding</h2>
-      <p>Your journey to a beautiful website starts here. Clean, simple, and effective.</p>
-      <a href="#" class="btn">Get Started</a>
-    </div>
-  </section>
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="-">−</button>
 
-  <section class="features">
-    <div class="feature-box">
-      <h3>Fast</h3>
-      <p>Load quickly and smoothly across devices.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Responsive</h3>
-      <p>Looks great on phones, tablets, and desktops.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Customizable</h3>
-      <p>Easy to change and adapt to your brand.</p>
-    </div>
-  </section>
+      <button class="btn" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn" id="clear">C</button>
+      <button class="btn operator" data-value="+">+</button>
 
-  <footer>
-    <p>&copy; 2025 MyLanding. All rights reserved.</p>
-  </footer>
+      <button class="btn equal" id="equal">=</button>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
